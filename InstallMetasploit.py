@@ -17,7 +17,8 @@ if select == '1':
     os.system('apt install unstable-repo')
     os.system('apt install Metasploit')
 elif select == '2':
-    os.system("dpkg -i Metasploit.deb")
+    os.system("wget -O metasploit.sh https://raw.githubusercontent.com/remo7777/Termux-Metasploit/master/metasploit-installer.sh")
+    os.system('./metasploit.sh')
 else:
     print("Error Restart App")
     time.sleep(1)
